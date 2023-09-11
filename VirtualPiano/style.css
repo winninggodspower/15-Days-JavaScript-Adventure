@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e4f2fd;
+}
+
+.paino{
+    background: linear-gradient(to bottom, #202020, #202020);;
+    border-radius: 1rem;
+    padding: 40px 40px 40px 40px;
+}
+
+
+/* heading styling */
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.header div{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+label{
+    font-size: 24px;
+}
+
+/* end of heading styling */
+
+
+/* styling for the keys */
+.key{
+    border-radius: .5rem;
+}
+
+.key.active{
+    box-shadow: 2px -1px 8px 2px rgba(0,0,0,0.75) inset;
+}
+
+.white-key{
+    background-color: white;
+    width: 80px;
+    height: 240px;
+    border: 2px solid #202020;
+}
+
+.keys{
+    position: relative;
+}
+
+.white-keys, .black-keys{
+    display: flex;
+}
+
+.black-key{
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 150px;
+    background-color: #202020;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.black-key:nth-child(1){
+    left: calc(80px - 20px);
+}
+
+.black-key:nth-child(2){
+    left: calc(160px - 20px);
+}
+
+.black-key:nth-child(3){
+    left: calc(320px - 20px);
+}
+
+.black-key:nth-child(4){
+    left: calc(400px - 20px);
+}
+
+.black-key:nth-child(5){
+    left: calc(480px - 20px);
+}
+
+.black-key:nth-child(6){
+    left: calc(640px - 20px);
+}
+
+.black-key:nth-child(7){
+    left: calc(720px - 20px);
+}
